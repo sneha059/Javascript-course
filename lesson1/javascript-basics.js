@@ -90,8 +90,51 @@ try {
 // Single-line comment: // This is a comment
 // Multi-line comment: /* This is a multi-line comment */
 
-// 10. Node.js
+// 10. Node.js- used to compilr javascript files
 // When using Node.js, you can run JavaScript files outside the browser using the command: `node filename.js`
 // Example:
 // node javascript-basics.js  // Run your JavaScript code in the terminal
+
+// Notes from Today's Learning and Setup
+
+// 1. Setting Up Node.js with npm-----SCRIPTING JABARDASTI NPM START KE LIYE---
+// - First, you create a `package.json` file in your project directory by running `npm init -y`.
+// - This initializes the project and allows you to add a "start" script in the `package.json`.
+// - The `start` script in `package.json` lets you run your JavaScript file using `npm start` instead of `node filename.js`.
+
+/* Example of `package.json` after running `npm init -y`:
+ {
+   "name": "javascript-course",
+   "version": "1.0.0",
+   "main": "index.js",
+   "scripts": {
+        "start": "node lesson1/javascript-basics.js"
+   },
+      "license": "ISC"
+}*/
+
+// 2. Running JavaScript with Node.js
+// - You can run JavaScript files in Node.js from the terminal using the command:
+//    node filename.js
+// - When you run `npm start`, it will run the script you defined in `package.json`, like:
+//    npm start -> node lesson1/javascript-basics.js
+// - If you encounter the "Cannot find module" error, ensure the file paths are correct.
+//    In this case, ensure the path inside `start` script is correct, like:
+//    "start": "node javascript-basics.js"  (if the file is in the same folder)
+
+
+// 3. GitHub & Version Control
+// - After making changes to your JavaScript file, use Git to commit and push the changes to your GitHub repository.
+// - Steps for Git commit:
+//   0. make a repository on your github
+//   1. Initialize a repository: `git init`
+//   2. Add the changes: `git add .`
+//   3. Commit the changes: `git commit -m "Add JavaScript basics with comments"`
+//   4. Push to GitHub: `git push origin main`
+
+// 4. Common Mistakes and Things to Remember:
+// - Always check file paths, especially when using Node.js. Incorrect paths are the most common error when using `node` or `npm start`.
+// - Use `let` and `const` for variables, avoid `var` in modern JavaScript.
+// - Functions are essential for reusable code blocks, try to break your code into smaller functions where possible.
+// - For larger projects, consider organizing your code into multiple files and using `require` (in Node.js) to import modules.
 
