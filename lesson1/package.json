@@ -1,0 +1,12 @@
+{
+  "name": "lesson1",
+  "version": "1.0.0",
+  "main": "javascript-basics.js",
+  "scripts": {
+    "start": "node javascript-basics.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
